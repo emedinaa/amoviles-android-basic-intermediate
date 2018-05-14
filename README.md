@@ -34,9 +34,17 @@
 
 ### 1. Android
 
+Versiones
+
+![table-versions](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/android-versions.png)
+
 ![versions](https://chart.googleapis.com/chart?chs=500x250&cht=p&chco=c4df9b%2C6fad0c&chf=bg%2Cs%2C00000000&chd=t%3A0.3%2C0.4%2C4.3%2C10.3%2C22.4%2C25.6%2C31.1%2C5.7&chl=Gingerbread%7CIce%20Cream%20Sandwich%7CJelly%20Bean%7CKitKat%7CLollipop%7CMarshmallow%7CNougat%7COreo)
 
+Tamaños
+
 ![devices](https://chart.googleapis.com/chart?chs=400x250&cht=p&chco=c4df9b%2C6fad0c&chf=bg%2Cs%2C00000000&chd=t%3A2.9%2C5.5%2C91.1%2C0.5&chl=Xlarge%7CLarge%7CNormal%7CSmall)
+
+![table-devices](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/android-screens.png)
 
 ### 2/3. Android Studio
 
@@ -96,11 +104,17 @@ Github [https://github.com/](https://github.com/)
 
 ## Samples
 
-- MyFirstApp ![first app](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/my-first-app.png)
+- MyFirstApp
 
-- JavaForAndroid ![javaforandroid](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/java-for-android.png)
+ <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/my-first-app.png" height="480">
 
-- GallerySample ![gallerysample](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png)
+- JavaForAndroid
+
+ <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/java-for-android.png" height="480">
+
+- GallerySample
+
+ <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png" height="480">
 
 ## Homework
 
