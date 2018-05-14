@@ -54,6 +54,10 @@ Genymotion [https://www.genymotion.com/desktop/](https://www.genymotion.com/desk
 
 Android Plugin for Gradle Release Notes  [https://developer.android.com/studio/releases/gradle-plugin](https://developer.android.com/studio/releases/gradle-plugin)
 
+![gradle](https://www.safaribooksonline.com/library/view/gradle-recipes-for/9781491947272/assets/rega_0108.png)
+
+[https://guides.gradle.org/building-android-apps/](https://guides.gradle.org/building-android-apps/)
+
 ## Samples
 
 ## Homework
