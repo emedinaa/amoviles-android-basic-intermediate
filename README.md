@@ -19,21 +19,21 @@
 ## Resources
 
 
-Entorno de desarrollo https://developer.android.com/studio/index.html?hl=es-419
+- Entorno de desarrollo https://developer.android.com/studio/index.html?hl=es-419
 
-Android Developers - Desarrollo https://developer.android.com/develop/index.html
+- Android Developers - Desarrollo https://developer.android.com/develop/index.html
 
-Ejemplos de Android  https://developer.android.com/samples/
+- Ejemplos de Android  https://developer.android.com/samples/
 
-Primer proyecto Android https://developer.android.com/training/basics/firstapp/creating-project.html?hl=es-419
+- Primer proyecto Android https://developer.android.com/training/basics/firstapp/creating-project.html?hl=es-419
 
-Codelab - primera android app con Java https://codelabs.developers.google.com/codelabs/build-your-first-android-app/index.html?index=..%2F..%2Findex
+- Codelab - primera android app con Java https://codelabs.developers.google.com/codelabs/build-your-first-android-app/index.html?index=..%2F..%2Findex
 
-Codelab - primera android app con Kotlin https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin/index.html?index=..%2F..%2Findex
+- Codelab - primera android app con Kotlin https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin/index.html?index=..%2F..%2Findex
 
-Android Tool Time https://www.youtube.com/watch?v=0n9sBgds-Hs&list=PLWz5rJ2EKKc_w6fodMGrA1_tsI3pqPbqa
+- Android Tool Time https://www.youtube.com/watch?v=0n9sBgds-Hs&list=PLWz5rJ2EKKc_w6fodMGrA1_tsI3pqPbqa
 
-Canal oficial en Youtube para Android Developers https://www.youtube.com/user/androiddevelopers
+- Canal oficial en Youtube para Android Developers https://www.youtube.com/user/androiddevelopers
 
 - Java Programming Fundamentals https://www.udemy.com/java-programming-fundamentals/
 
