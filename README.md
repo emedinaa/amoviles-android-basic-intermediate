@@ -98,6 +98,17 @@ Github [https://github.com/](https://github.com/)
 
 ## Homework
 
+  ### Gradle
+  
+  Buscar una librería compatible con Android y agregar la dependencia a un proyecto . Ejemplo , picasso o retrofit.
+  
+  Escoger un task del plugin de Gradle y ejecutarla desde terminal o desde Android Studio
+  
+  ### Android Studio
+  
+  Crear un proyecto en Android Studio , luego realizar los cambios acorde al template entregado en clase (gradle).
+  
+
 ## Resources
 
 - Entorno de desarrollo https://developer.android.com/studio/index.html?hl=es-419
