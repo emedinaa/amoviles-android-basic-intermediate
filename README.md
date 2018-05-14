@@ -96,6 +96,12 @@ Github [https://github.com/](https://github.com/)
 
 ## Samples
 
+- MyFirstApp ![first app](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/my-first-app.png)
+
+- JavaForAndroid ![javaforandroid](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/java-for-android.png)
+
+- GallerySample ![gallerysample](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png)
+
 ## Homework
 
   ### Gradle
