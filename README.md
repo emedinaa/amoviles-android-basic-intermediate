@@ -38,19 +38,27 @@
 
 ![devices](https://chart.googleapis.com/chart?chs=400x250&cht=p&chco=c4df9b%2C6fad0c&chf=bg%2Cs%2C00000000&chd=t%3A2.9%2C5.5%2C91.1%2C0.5&chl=Xlarge%7CLarge%7CNormal%7CSmall)
 
-
 ### Android Studio
 
 ![ide](https://developer.android.com/studio/images/studio-homepage-hero_2x.jpg?hl=es-419)
 
 Android Studio [https://developer.android.com/studio/](https://developer.android.com/studio/?hl=es-419)
 
+### Android Emulator
+
+![genymotion](https://www.genymotion.com/wp-content/uploads/2016/02/features-genymotion-imac.jpg)
+
+Genymotion [https://www.genymotion.com/desktop/](https://www.genymotion.com/desktop/)
+
+### Gradle
+
+Android Plugin for Gradle Release Notes  [https://developer.android.com/studio/releases/gradle-plugin](https://developer.android.com/studio/releases/gradle-plugin)
+
 ## Samples
 
 ## Homework
 
 ## Resources
-
 
 - Entorno de desarrollo https://developer.android.com/studio/index.html?hl=es-419
 
