@@ -32,31 +32,57 @@
 
 10. Características del diseño en Android
 
-### Android
+### 1. Android
 
 ![versions](https://chart.googleapis.com/chart?chs=500x250&cht=p&chco=c4df9b%2C6fad0c&chf=bg%2Cs%2C00000000&chd=t%3A0.3%2C0.4%2C4.3%2C10.3%2C22.4%2C25.6%2C31.1%2C5.7&chl=Gingerbread%7CIce%20Cream%20Sandwich%7CJelly%20Bean%7CKitKat%7CLollipop%7CMarshmallow%7CNougat%7COreo)
 
 ![devices](https://chart.googleapis.com/chart?chs=400x250&cht=p&chco=c4df9b%2C6fad0c&chf=bg%2Cs%2C00000000&chd=t%3A2.9%2C5.5%2C91.1%2C0.5&chl=Xlarge%7CLarge%7CNormal%7CSmall)
 
-### Android Studio
+### 2/3. Android Studio
 
 ![ide](https://developer.android.com/studio/images/studio-homepage-hero_2x.jpg?hl=es-419)
 
 Android Studio [https://developer.android.com/studio/](https://developer.android.com/studio/?hl=es-419)
 
-### Android Emulator
+### 4. App Components
+
+App Components [https://developer.android.com/guide/components/fundamentals](https://developer.android.com/guide/components/fundamentals)
+
+- Activities
+
+- Services
+
+- Broadcast receivers
+
+- Content providers
+
+### 5. Android Emulator
 
 ![genymotion](https://www.genymotion.com/wp-content/uploads/2016/02/features-genymotion-imac.jpg)
 
 Genymotion [https://www.genymotion.com/desktop/](https://www.genymotion.com/desktop/)
 
-### Gradle
+### 6. Gradle
 
 Android Plugin for Gradle Release Notes  [https://developer.android.com/studio/releases/gradle-plugin](https://developer.android.com/studio/releases/gradle-plugin)
 
 ![gradle](https://www.safaribooksonline.com/library/view/gradle-recipes-for/9781491947272/assets/rega_0108.png)
 
 Building Android Apps [https://guides.gradle.org/building-android-apps/](https://guides.gradle.org/building-android-apps/)
+
+### 7. Crea tu primera aplicación
+
+Build your first App [https://developer.android.com/training/basics/firstapp/](https://developer.android.com/training/basics/firstapp/)
+
+![1](https://developer.android.com/training/basics/firstapp/images/studio-welcome_2x.png)
+
+![2](https://developer.android.com/training/basics/firstapp/images/studio-editor_2x.png)
+
+![3](https://developer.android.com/training/basics/firstapp/images/run-avd_2x.png)
+
+![4](https://developer.android.com/training/basics/firstapp/images/screenshot-activity2.png)
+
+### 8. Java for Android Developers
 
 ### GIT
 
