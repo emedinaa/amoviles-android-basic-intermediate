@@ -56,7 +56,7 @@ Android Plugin for Gradle Release Notes  [https://developer.android.com/studio/r
 
 ![gradle](https://www.safaribooksonline.com/library/view/gradle-recipes-for/9781491947272/assets/rega_0108.png)
 
-[https://guides.gradle.org/building-android-apps/](https://guides.gradle.org/building-android-apps/)
+Building Android Apps [https://guides.gradle.org/building-android-apps/](https://guides.gradle.org/building-android-apps/)
 
 ## Samples
 
