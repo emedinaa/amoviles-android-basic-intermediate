@@ -43,7 +43,7 @@
 
 ![ide](https://developer.android.com/studio/images/studio-homepage-hero_2x.jpg?hl=es-419)
 
-[Android Studio](https://developer.android.com/studio/?hl=es-419)
+Android Studio [https://developer.android.com/studio/](https://developer.android.com/studio/?hl=es-419)
 
 ## Samples
 
