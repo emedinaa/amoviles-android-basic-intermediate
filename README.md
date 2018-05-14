@@ -32,6 +32,19 @@
 
 10. Características del diseño en Android
 
+### Android
+
+![versions](https://chart.googleapis.com/chart?chs=500x250&cht=p&chco=c4df9b%2C6fad0c&chf=bg%2Cs%2C00000000&chd=t%3A0.3%2C0.4%2C4.3%2C10.3%2C22.4%2C25.6%2C31.1%2C5.7&chl=Gingerbread%7CIce%20Cream%20Sandwich%7CJelly%20Bean%7CKitKat%7CLollipop%7CMarshmallow%7CNougat%7COreo)
+
+![devices](https://chart.googleapis.com/chart?chs=400x250&cht=p&chco=c4df9b%2C6fad0c&chf=bg%2Cs%2C00000000&chd=t%3A2.9%2C5.5%2C91.1%2C0.5&chl=Xlarge%7CLarge%7CNormal%7CSmall)
+
+
+### Android Studio
+
+![ide](https://developer.android.com/studio/images/studio-homepage-hero_2x.jpg?hl=es-419)
+
+[Android Studio](https://developer.android.com/studio/?hl=es-419)
+
 ## Samples
 
 ## Homework
