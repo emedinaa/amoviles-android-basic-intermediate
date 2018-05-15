@@ -46,7 +46,7 @@ Tamaños
 
 ![table-devices](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/android-screens.png)
 
-Android dashboard [android-dashboard](https://developer.android.com/about/dashboards/)
+Android dashboard [(https://developer.android.com/about/dashboards/](https://developer.android.com/about/dashboards/)
 
 ### 2/3. Android Studio
 
