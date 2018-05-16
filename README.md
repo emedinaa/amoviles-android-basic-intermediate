@@ -353,7 +353,14 @@ Android Studio overview [https://developer.android.com/studio/intro/](https://de
  - JavaSamples
 
  <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png" height="480">
- 
+
+## Homework
+
+- Encuentra un plugin interesante para Android Studio e indica los pasos para instalarlo en el IDE.
+
+- Explica sobre SDK Manager y AVD Manager
+
+- Explica sobre el Android Profiles
 
 ## Resources
 
