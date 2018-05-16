@@ -2,6 +2,8 @@
 
 ## Lesson2 - Wednesday, May 16, 2018
 
+- Review
+
 - Lesson
 
 - Samples
@@ -9,6 +11,121 @@
 - Homework
 
 - Resources
+
+## Review
+
+¿Qué temas vimos en la clase pasada ?
+
+- Android Studio instalación [https://developer.android.com/studio/install](https://developer.android.com/studio/install)
+
+- Android Studio [https://developer.android.com/studio/intro/](https://developer.android.com/studio/intro/)
+
+- Template
+
+Template de proyecto Android [https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson1/template/MyFirstApp](https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson1/template/MyFirstApp)
+
+Gradle version : 4.1
+
+Android Plugin Version : 3.0.1
+
+Build.gradle del proyecto
+```
+  // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.30'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = 15
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '26.1.0'
+    constraintLayoutVersion='1.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '26.1.0'
+    junitVersion = '4.12'
+}
+```
+
+Build.gradle de la App
+
+```
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    //compileSdkVersion 26
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.emedinaa.myfirstapp"
+        //minSdkVersion 18
+        //targetSdkVersion 26
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    //implementation 'com.android.support:appcompat-v7:26.1.0'
+    //implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+
+    //testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+```
 
 ## Lesson
 
