@@ -35,7 +35,12 @@
 
 ### Android Studio
 
+Android Studio - User Interface
 ![](https://developer.android.com/studio/images/intro/main-window_2-2_2x.png)
+
+Projecto Android
+
+![](https://developer.android.com/studio/images/intro/project-android-view_2-1_2x.png)
 
 Android Studio overview [https://developer.android.com/studio/intro/](https://developer.android.com/studio/intro/)
 
