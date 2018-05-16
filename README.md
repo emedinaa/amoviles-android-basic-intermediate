@@ -14,7 +14,7 @@
 
 ## Review
 
-¿Qué temas vimos en la clase pasada ?
+### ¿Qué temas vimos en la clase pasada ?
 
 - Android Studio instalación [https://developer.android.com/studio/install](https://developer.android.com/studio/install)
 
@@ -126,6 +126,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
 ```
+### Activities
+
+- Crear un nuevo proyecto en Android y realizar los cambios para que tenga la configuración del template(MyFirstApp)
+
+Build your first app  [https://developer.android.com/training/basics/firstapp/](https://developer.android.com/training/basics/firstapp/)
+
 
 ## Lesson
 
