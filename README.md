@@ -33,6 +33,31 @@
 10. Características del diseño en Android
 
 
+### Android Studio
+
+![](https://developer.android.com/studio/images/intro/main-window_2-2_2x.png)
+
+Android Studio overview [https://developer.android.com/studio/intro/](https://developer.android.com/studio/intro/)
+
+## Samples
+
+### Activities
+
+- Crear una actividad llamada HomeActivity
+
+- Crear un fragment llamado FragmentActivity
+
+- Crear una clase java llamada User en src/main/package/model/User.java
+
+- Agregar un color en res/values/colors.xml
+
+- Agregar un string en res/values/strings.xml
+
+- Agregar una dimension en res/values/dimens.xml
+
+- Agregar una imagen en res/drawable/ic_android.png
+
+
 ## Resources
 
 - Entorno de desarrollo https://developer.android.com/studio/index.html?hl=es-419
