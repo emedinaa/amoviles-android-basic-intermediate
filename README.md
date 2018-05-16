@@ -284,6 +284,30 @@ switch ( variable_to_test ) {
 
 Bucles
 
+```
+while (condicion) {
+    ...
+}
+```
+
+```
+do {
+    ...
+} while (condicion)
+```
+
+```
+for (int i=0; condicion; i++) {
+    ...
+}
+```
+
+```
+for (iteredor: coleccion) {
+    ...
+}
+```
+
 
 ### Android Studio
 
