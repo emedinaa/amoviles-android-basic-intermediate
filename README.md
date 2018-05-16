@@ -32,6 +32,135 @@
 
 10. Características del diseño en Android
 
+### Java for Android Developers
+
+Compilar Java online [https://www.compilejava.net/](https://www.compilejava.net/)
+
+```
+public class HelloWorld
+{
+
+  public static void main(String[] args)
+  {
+
+    System.out.print("Hello World!");
+  }
+}
+```
+
+Comentarios
+
+```
+//This is a single line comment
+
+/*
+This is a comment spreading
+over two lines or more
+*/
+
+```
+
+Variables
+
+```
+int first_number, second_number, answer;
+first_number = 10;
+second_number = 20;
+answer = first_number + second_number;
+
+double first_number, second_number, answer;
+first_number = 10.5;
+second_number = 20.8;
+
+float first_number, second_number, answer;
+first_number = 10.5f;
+second_number = 20.8f;
+
+String first_name,family_name;
+first_name = "William";
+family_name = "Shakespeare";
+
+System.out.println( first_name + " " + family_name );
+
+```
+
+Operadores
+```
++ (the plus sign)
+- (the minus sign)
+* (the multiplication sign is the asterisk sign)
+/ (the divide sign is the forward slash)
+
+> Greater Than
+< Less Than
+>= Greater Than or Equal To
+<= Less Than or Equal To
+
+&& AND
+|| OR
+== HAS A VALUE OF
+! NOT
+
+```
+
+Condicionales
+
+```
+if ( Statement ) {
+}
+```
+```
+int age=18;
+
+if(age<=18){
+}
+
+if(age>18){
+}
+
+```
+
+```
+if ( condition_one ) {
+
+}
+else if ( condition_two ) {
+
+}
+else {
+
+}
+```
+
+Booleanos
+
+```
+boolean user = true;
+
+if ( user == true) {
+System.out.println("it's true");
+}
+else {
+System.out.println("it's false");
+} 
+
+```
+
+```
+switch ( variable_to_test ) {
+  case value:
+    code_here;
+    break;
+  case value:
+    code_here;
+    break;
+  default:
+    values_not_caught_above;
+}
+```
+
+Bucles
+
 
 ### Android Studio
 
