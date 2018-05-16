@@ -9,17 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="JavaSamples">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".RegisterBaseActivity" />
-        <activity android:name=".CalculadoraActivity" />
-        <activity android:name=".CalculadoraBaseActivity" />
+        <activity android:name=".RegisterActivity"
+            android:label="Formulario"/>
+        <activity android:name=".RegisterBaseActivity"
+            android:label="Formulario Base"/>
+        <activity android:name=".CalculadoraActivity"
+            android:label="Calculadora"/>
+        <activity android:name=".CalculadoraBaseActivity"
+            android:label="Calculadora Base"/>
     </application>
 
 </manifest>

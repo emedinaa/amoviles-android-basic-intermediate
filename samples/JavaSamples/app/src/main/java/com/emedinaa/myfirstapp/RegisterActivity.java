@@ -24,26 +24,26 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ui();
+        //ui();
     }
 
     private void ui() {
 
-        eteName= (EditText)findViewById(R.id.eteName);
-        eteEmail= (EditText)findViewById(R.id.eteEmail);
-        etePassword1= (EditText)findViewById(R.id.etePassword1);
-        etePassword2= (EditText)findViewById(R.id.etePassword2);
+        eteName= findViewById(R.id.eteName);
+        eteEmail= findViewById(R.id.eteEmail);
+        etePassword1= findViewById(R.id.etePassword1);
+        etePassword2= findViewById(R.id.etePassword2);
 
-        butSignUp = (Button)findViewById(R.id.butSignUp);
+        butSignUp = findViewById(R.id.butSignUp);
 
         butSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (validateForm()) {
+                /*if (validateForm()) {
                     //enviar al servidor
                     //Toast.makeText(getActivity(),"Enviando al servidor",Toast.LENGTH_LONG).show();
                     showMessage();
-                }
+                }*/
             }
         });
     }
@@ -55,7 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
         email = eteEmail.getText().toString().trim();
         password1 = etePassword1.getText().toString().trim();
         password2 = etePassword2.getText().toString().trim();
-        clear();
+        //clear();
 
         if (name.equals("")) {
             eteName.setError("Ingresar el nombre");

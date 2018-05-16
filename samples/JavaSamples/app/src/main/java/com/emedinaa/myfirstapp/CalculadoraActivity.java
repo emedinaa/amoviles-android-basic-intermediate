@@ -21,24 +21,24 @@ public class CalculadoraActivity extends AppCompatActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculadora);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ui();
+        //ui();
     }
 
     private void ui() {
 
-        editTextOp1= (EditText)findViewById(R.id.editTextOp1);
-        editTextOp2= (EditText)findViewById(R.id.editTextOp2);
-        tviOp= (TextView)findViewById(R.id.tviOp);
+        editTextOp1= findViewById(R.id.editTextOp1);
+        editTextOp2= findViewById(R.id.editTextOp2);
+        tviOp= findViewById(R.id.tviOp);
 
         iviSum= findViewById(R.id.iviSum);
         iviSubtract= findViewById(R.id.iviSubtract);
         iviMultiply= findViewById(R.id.iviMultiply);
         iviDivide= findViewById(R.id.iviDivide);
 
-        iviSum.setOnClickListener(this);
-        iviSubtract.setOnClickListener(this);
-        iviMultiply.setOnClickListener(this);
-        iviDivide.setOnClickListener(this);
+        //iviSum.setOnClickListener(this);
+        //iviSubtract.setOnClickListener(this);
+        //iviMultiply.setOnClickListener(this);
+        //iviDivide.setOnClickListener(this);
     }
 
     @Override
@@ -72,7 +72,7 @@ public class CalculadoraActivity extends AppCompatActivity implements View.OnCli
 
         }
         //TODO mostrar resultados
-        tviOp.setText("Resultado " + op);
+        //tviOp.setText("Resultado " + op);
 
 
     }
