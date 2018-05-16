@@ -320,8 +320,6 @@ Projecto Android
 
 Android Studio overview [https://developer.android.com/studio/intro/](https://developer.android.com/studio/intro/)
 
-## Samples
-
 ### Activities
 
 - Crear una actividad llamada HomeActivity
@@ -338,6 +336,24 @@ Android Studio overview [https://developer.android.com/studio/intro/](https://de
 
 - Agregar una imagen en res/drawable/ic_android.png
 
+## Samples
+
+- MyFirstApp
+
+ <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/my-first-app.png" height="480">
+
+- JavaForAndroid
+
+ <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/java-for-android.png" height="480">
+
+- GallerySample
+
+ <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png" height="480">
+ 
+ - JavaSamples
+
+ <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png" height="480">
+ 
 
 ## Resources
 
