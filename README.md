@@ -314,16 +314,19 @@ Métodos
  private int sumar(int op1, int op2) {
         return op1+op2;
     }
-    private int restar(int op1, int op2) {
-        return op1-op2;
-    }
-    private int multiplicar(int op1, int op2) {
-        return op1*op2;
-    }
-    private int dividir(int op1, int op2) {
-        //TODO validar si op2!=0
-        return op1/op2;
-    }
+    
+  private int restar(int op1, int op2) {
+      return op1-op2;
+  }
+  
+  private int multiplicar(int op1, int op2) {
+      return op1*op2;
+  }
+  
+  private int dividir(int op1, int op2) {
+      //TODO validar si op2!=0
+      return op1/op2;
+  }
 ```
 
 ### Android Studio
@@ -369,7 +372,7 @@ Android Studio overview [https://developer.android.com/studio/intro/](https://de
  
  - JavaSamples
 
- <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png" height="480">
+ <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson2/images/java-samples.png" height="480">
 
 ## Homework
 
