@@ -308,6 +308,23 @@ for (iteredor: coleccion) {
 }
 ```
 
+Métodos
+
+```
+ private int sumar(int op1, int op2) {
+        return op1+op2;
+    }
+    private int restar(int op1, int op2) {
+        return op1-op2;
+    }
+    private int multiplicar(int op1, int op2) {
+        return op1*op2;
+    }
+    private int dividir(int op1, int op2) {
+        //TODO validar si op2!=0
+        return op1/op2;
+    }
+```
 
 ### Android Studio
 
