@@ -40,7 +40,7 @@ Android Studio - User Interface
 
 Projecto Android
 
-![](https://developer.android.com/studio/images/intro/project-android-view_2-1_2x.png)
+<img src="https://developer.android.com/studio/images/intro/project-android-view_2-1_2x.png" height="480">
 
 Android Studio overview [https://developer.android.com/studio/intro/](https://developer.android.com/studio/intro/)
 
