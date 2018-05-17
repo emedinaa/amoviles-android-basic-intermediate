@@ -334,7 +334,7 @@ Métodos
 Android Studio - User Interface
 ![](https://developer.android.com/studio/images/intro/main-window_2-2_2x.png)
 
-Projecto Android
+Proyecto Android
 
 <img src="https://developer.android.com/studio/images/intro/project-android-view_2-1_2x.png" height="480">
 
