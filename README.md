@@ -248,4 +248,6 @@ Resultado :
 
 - Drawable Resources https://developer.android.com/guide/topics/resources/drawable-resource.html
 
+- Device compatibility https://developer.android.com/guide/practices/compatibility
+
  <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png" height="480">
