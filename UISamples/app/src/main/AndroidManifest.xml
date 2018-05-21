@@ -16,7 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UISamplesActivity" />
+        <activity android:name=".UISamplesActivity">
+
+            <!--
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".MainToolbarActivity">
+            <!--  android:theme="@style/AppToolbarTheme">-->
+
+         <!--<intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>-->
+
+        </activity>
     </application>
 
 </manifest>
