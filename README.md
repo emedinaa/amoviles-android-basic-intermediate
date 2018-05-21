@@ -21,6 +21,21 @@
 
 ## Lesson
 
+- Implementar la navegación en una aplicación Android 12• Interfaz de usuario en Android: Layouts
+
+- Controles UI básicos
+
+- Controles de selección
+
+- Implementar aplicaciones para múltiples tamaños de pantalla 16• Utilizando ActionBar en las aplicaciones
+
+- Creación de menús y submenús
+
+- Notificaciones (Toast, barra de estados, Diálogos, Snackbar)
+
+- Ciclo de vida de las actividades
+
+- Uso de la cámara en las aplicaciones
 
 ## Samples
 
