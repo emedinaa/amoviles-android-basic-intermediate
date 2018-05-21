@@ -1,6 +1,6 @@
 # Curso de Aplicaciones Android con Java (Básico - Intermedio) - Academia Móviles
 
-## Lesson2 - Monday, May 21, 2018
+## Lesson3 - Monday, May 21, 2018
 
 - Review
 
@@ -16,8 +16,15 @@
 
 ### ¿Qué temas vimos en la clase pasada ?
 
+- Fundamentos de Java
+
+- Android Studio
+
+- Ejemplos , GallerySample, JavaForAndroid, JavaSamples
+
 ### Activities
 
+- Completemos los ejemplos de la clase 2 , JavaSamples https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson2/samples
 
 ## Lesson
 
@@ -210,9 +217,25 @@ Resultado :
 
 <img src="/images/shape1.png" />
 
+### Activities
+
+- Crear una actividad llamada LogInActivity e implementar el siguiente diseño utilizando : LinearLayout, RelativeLayout y ConstraintLayout . Considerar el uso de colores en hexadecimal y manejar la carpeta *res* para registrar los colores, textos e imagenes.
+
+ <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson3/images/logIn_sample.png" height="480">
+
 ## Samples
 
+En el directorio de este proyecto contamos con los proyectos
+
+- LogInSample
+
+- UISamples
+
+y la carpeta "exercises" , donde encontrarán ejercicios que pueden realizar relacionados a UI y Layouts.
+
 ## Homework
+
+- Realizar los ejercicios 6, 7, 9. * Utilizar recursos de diseño similares.
 
 ## Resources
 
