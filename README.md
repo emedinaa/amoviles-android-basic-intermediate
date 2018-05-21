@@ -20,7 +20,7 @@
 
 - Android Studio
 
-- Ejemplos , GallerySample, JavaForAndroid, JavaSamples
+- Ejemplos : GallerySample, JavaForAndroid, JavaSamples
 
 ### Activities
 
@@ -223,6 +223,30 @@ Resultado :
 
  <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson3/images/logIn_sample.png" height="480">
 
+- Considerar los siguientes recursos
+
+res/values/colors.xml
+
+```
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="green">#8AB68C</color>
+    <color name="lightGray">#EEEEEE</color>
+```
+
+res/values/strings.xml
+
+```
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+```
+res/drawable/
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson3/images/ic_instagram_logo.png" height="480">
+
 ## Samples
 
 En el directorio de este proyecto contamos con los proyectos
@@ -274,5 +298,3 @@ y la carpeta "exercises" , donde encontrarán ejercicios que pueden realizar rel
 - Device compatibility https://developer.android.com/guide/practices/compatibility
 
 - Material colors https://www.materialui.co/colors
-
- <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png" height="480">
