@@ -250,4 +250,6 @@ Resultado :
 
 - Device compatibility https://developer.android.com/guide/practices/compatibility
 
+- Material colors https://www.materialui.co/colors
+
  <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png" height="480">
