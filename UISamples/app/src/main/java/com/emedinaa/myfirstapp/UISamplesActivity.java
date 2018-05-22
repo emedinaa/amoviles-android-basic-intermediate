@@ -32,7 +32,7 @@ public class UISamplesActivity extends AppCompatActivity {
         //setContentView(R.layout.layout_example1);
         //setContentView(R.layout.layout_example2);
         //setContentView(R.layout.layout_example3);
-        setContentView(R.layout.layout_example4);
+        //setContentView(R.layout.layout_example4);
 
     }
 }

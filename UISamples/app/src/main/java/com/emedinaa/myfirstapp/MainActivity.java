@@ -2,6 +2,11 @@ package com.emedinaa.myfirstapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,29 +24,28 @@ public class MainActivity extends AppCompatActivity {
      Solo puedes tener una actividad como 'LAUNCHER'
      */
 
-    //private final String USER_MESSAGE="This is my First Android App";
-    //private TextView textView;
+    private final String USER_MESSAGE="This is my First Android App";
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //textView= findViewById(R.id.textView);
-
+        textView = findViewById(R.id.textView);
         //events
-        /*textView.setOnClickListener(new View.OnClickListener() {
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Log.v("CONSOLE", "textView click");
-                //showMessage(USER_MESSAGE);
+                //Log.v("CONSOLE", "textView click");
+                showMessage(USER_MESSAGE);
             }
-        });*/
+        });
     }
 
-    /*private void showMessage(String message){
+    private void showMessage(String message){
         Log.v("CONSOLE",message);
         Toast.makeText(this,message,Toast.LENGTH_LONG).show();
-    }*/
+    }
 }
