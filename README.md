@@ -259,7 +259,7 @@ En el directorio de este proyecto contamos con los proyectos
 
 <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson3/images/login_sample4.png" height="480"> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson3/images/relative_sample.png" height="480">
 
-<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson3/images/onstraint_layout_sample.png" height="480">
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson3/images/constraint_layout_sample.png" height="480">
 
 y la carpeta "exercises" , donde encontrarán ejercicios que pueden realizar relacionados a UI y Layouts.
 
