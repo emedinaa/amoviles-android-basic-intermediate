@@ -109,6 +109,16 @@
           });
   }
 ```
+## Samples
+
+- UI Samples
+
+- UIEvents
+
+- DialogSamples
+
+- NavigationSamples
+
 ## Homework
 
 - Realizar los ejercicios 02,03,04  utilizando solo ConstraintLayout https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson3/exercises
