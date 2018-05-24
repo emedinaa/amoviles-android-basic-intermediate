@@ -149,3 +149,5 @@ Material design for Android https://developer.android.com/guide/topics/ui/look-a
 
 - Material design kit https://materialdesignkit.com/templates/
 
+- KeyEvent https://developer.android.com/reference/android/view/KeyEvent
+
