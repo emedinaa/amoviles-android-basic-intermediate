@@ -120,7 +120,7 @@ Material design for Android https://developer.android.com/guide/topics/ui/look-a
 
 <img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/ui-events.png" height="360" /> 
 
-<img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/ui-events1.png" height="360" /> 
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/ui-events2.png" height="360" /> 
 
 
 - DialogSamples
