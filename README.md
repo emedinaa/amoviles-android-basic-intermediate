@@ -114,13 +114,19 @@ Material design for Android https://developer.android.com/guide/topics/ui/look-a
 ```
 ## Samples
 
-- UI Samples
+- UISamples
 
 - UIEvents
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/ui-events.png" height="360" /> 
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/ui-events1.png" height="360" /> 
+
 
 - DialogSamples
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/dialogs-1.png" height="360" /> <img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/dialogs-2.png" height="360" /> 
 
 - NavigationSamples
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/navigation-1.png" height="360" /> <img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/navigation-2.png" height="360" />
 
 ## Homework
 
