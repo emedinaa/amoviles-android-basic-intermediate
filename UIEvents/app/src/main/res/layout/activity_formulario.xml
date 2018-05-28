@@ -149,8 +149,7 @@
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:gravity="right"
-                        android:orientation="horizontal"
-                        >
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/rbM"

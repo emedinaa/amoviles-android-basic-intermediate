@@ -8,7 +8,7 @@ public class UISamplesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_uisamples);
+        //setContentView(R.layout.activity_uisamples);
 
         //LinearLayout
         //setContentView(R.layout.activity_linear_vertical);
@@ -17,7 +17,7 @@ public class UISamplesActivity extends AppCompatActivity {
         //RelativeLayout
         //setContentView(R.layout.activity_relative);
         //setContentView(R.layout.layout_relative_transparent);
-        //setContentView(R.layout.layout_relative_example);
+        setContentView(R.layout.layout_relative_example);
 
         //ConstraintLayout
         //setContentView(R.layout.activity_constraint_layout);

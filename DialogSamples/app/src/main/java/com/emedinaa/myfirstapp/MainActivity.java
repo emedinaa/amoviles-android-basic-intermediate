@@ -2,10 +2,8 @@ package com.emedinaa.myfirstapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.emedinaa.myfirstapp.fragments.CustomDialogFragment;
@@ -33,12 +31,12 @@ public class MainActivity extends AppCompatActivity implements CustomDialogListe
         btnDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showSimpleDialog();
+                //showSimpleDialog();
 
                 //showSelectionDialog();
                 //showMultichoiceDialog();
                 //showCustomDialog();
-                //showTransparentDialog();
+                showTransparentDialog();
             }
         });
     }

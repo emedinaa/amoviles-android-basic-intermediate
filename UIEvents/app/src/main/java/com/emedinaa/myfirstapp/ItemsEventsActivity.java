@@ -1,6 +1,5 @@
 package com.emedinaa.myfirstapp;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,8 +18,8 @@ public class ItemsEventsActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items_events);
-        ui();
-        //uiFlag();
+        //ui();
+        uiFlag();
     }
 
     private void ui() {

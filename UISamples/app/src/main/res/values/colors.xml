@@ -11,7 +11,6 @@
     <color name="gray5">#A2A2A0</color>
     <color name="black">#000000</color>
 
-    <color name="gray">#F2F2F2</color>
     <color name="blue">#4B7BD7</color>
     <color name="skyblue">#00C5FD</color>
     <color name="white">#FFFFFF</color>
@@ -19,11 +18,14 @@
     <color name="black1">#1D1D1B</color>
     <color name="gray_bg">#CCCCCC</color>
     <color name="gray2">#EEEEEE</color>
-    <color name="green">#7EB888</color>
     <color name="blue_bg">#4F7BA0</color>
     <color name="gray_txt">#B0BEC9</color>
     <color name="blue_txt">#7293AC</color>
     <color name="black60">#99000000</color>
+
+    <color name="gray">#CCCCCC</color>
+    <color name="green">#8AB68C</color>
+    <color name="lightGray">#EEEEEE</color>
     <!-- #F2F2F2
     #4B7BD7
     #00C5FD

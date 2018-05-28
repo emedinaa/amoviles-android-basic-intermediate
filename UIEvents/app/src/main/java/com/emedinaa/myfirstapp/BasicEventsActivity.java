@@ -1,6 +1,5 @@
 package com.emedinaa.myfirstapp;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class BasicEventsActivity extends BaseActivity implements View.OnClickListener{
+public class BasicEventsActivity extends BaseActivity
+implements View.OnClickListener{
 
     private  Button btn;
     private ImageView ivi;
@@ -41,7 +41,6 @@ public class BasicEventsActivity extends BaseActivity implements View.OnClickLis
         ivi.setOnClickListener(this);
         flay.setOnClickListener(this);
         tvi.setOnClickListener(this);
-
     }
 
     @Override
@@ -70,6 +69,7 @@ public class BasicEventsActivity extends BaseActivity implements View.OnClickLis
     private void showMessage(String message) {
         Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
     }
+
 
 
 }
