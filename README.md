@@ -1,262 +1,323 @@
 # Curso de Aplicaciones Android con Java (Básico - Intermedio) - Academia Móviles
 
-## Lesson 1 - Monday, May 14, 2018
+## Lesson 5 - Monday, May 28, 2018
 
-- Lesson
+## RecyclerView & Adapters
 
-- Samples
+  - Adapters
+  - Custom Adapters
+  - RecyclerView
+  - Events
+  - Exercises
 
-- Homework
+## Adapters
+<img src="https://camo.githubusercontent.com/fc6df9d5fd6d78e48d6802c77ad7264a6a787672/68747470733a2f2f692e696d6775722e636f6d2f6d6b38324a64322e6a7067" />
 
-- Resources
+Los Adapters son los intermediarios entre el origen de datos y el componente visual.
+Respecto al origen de datos , contamos con los siguiente componentes :
+- List
+- ArrayList
+- Array
 
-## Lesson
+y a los componentes visuales, tenemos :
 
-1. ¿Qué es android? (versiones, história)
+- ListView
+- GridView
+- RecyclerView
 
-2. Entorno de desarrollo Android (Android Studio)
+Los Adapters son los que asocian la colección de datos con las  celdas de nuestras vistas , tambien te permiten realizar cambios sobre ellas. Es decir, agregar, modificar o eliminar un elemento de nuestra lista .
 
-3. Estructura de un proyecto Android (Android Studio)
+ListView & GridView
 
-4. Componentes de una aplicación Android (Android Studio)
+<img src="https://developer.android.com/images/ui/listview.png" /> <img src="https://developer.android.com/images/ui/gridview.png" />
 
-5. Simuladores de android
+Tipos :
 
-6. Conociendo Gradle
+Se dispone de los siguientes tipos de adapters
+- BaseAdapter , cuando necesitemos manejar alguna lista desde cero , recomiendo utilizarlo . Usualmente solicita implementar varios métodos.
 
-7. Uso de mockups
+- ArrayAdapter , este es un adapter que nos puede servir de base y solo requiere implementar un método.
 
-8. Desarrollando mi primera aplicación Android
+- CursorAdapter , este es usado cuando interactuamos con base de datos.
 
-9. Explicación de Métodos, Objetos y Clases
+## Custom Adapters
 
-10. Características del diseño en Android
+Para nosotros poder construir una lista personalizada requerimos los siguientes pasos :
 
-### 1. Android
+1. Origen de datos , no importa si esta colección viene de base de datos, de una archivo json o de la respuesta de la llamada a un servicio web . Al final , solo necesitamos este como una colección de Java : ArrayList, List o Array.
 
-Versiones
+2. Entidad , normalmente nuestras celdas estarán relacionadas a entidades, es decir a un clase modelo que represente el contenido que se va a mostrar en una lista . Por ejemplo, si vamos a mostrar un listado de películas :
 
-![table-versions](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/android-versions.png)
+```java
+package com.androidbootcamp.androidtemplate.model;
 
-![versions](https://chart.googleapis.com/chart?chs=500x250&cht=p&chco=c4df9b%2C6fad0c&chf=bg%2Cs%2C00000000&chd=t%3A0.3%2C0.4%2C4.3%2C10.3%2C22.4%2C25.6%2C31.1%2C5.7&chl=Gingerbread%7CIce%20Cream%20Sandwich%7CJelly%20Bean%7CKitKat%7CLollipop%7CMarshmallow%7CNougat%7COreo)
+/**
+ * @author Eduardo Medina
+ */
+public class Movie {
 
-Tamaños
+    private int id;
+    private String title;
+    private String desc;
+    private double price;
+    private boolean cartelera;
 
-![devices](https://chart.googleapis.com/chart?chs=400x250&cht=p&chco=c4df9b%2C6fad0c&chf=bg%2Cs%2C00000000&chd=t%3A2.9%2C5.5%2C91.1%2C0.5&chl=Xlarge%7CLarge%7CNormal%7CSmall)
+    public Movie(int id, String title, String desc, double price, boolean cartelera) {
+        this.id = id;
+        this.title = title;
+        this.desc = desc;
+        this.price = price;
+        this.cartelera = cartelera;
+    }
 
-![table-devices](https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/android-screens.png)
+    public Movie(String title, boolean cartelera) {
+        this.title = title;
+        this.cartelera = cartelera;
+    }
 
-Android dashboard [https://developer.android.com/about/dashboards/](https://developer.android.com/about/dashboards/)
+    public int getId() {
+        return id;
+    }
 
-### 2/3. Android Studio
+    public void setId(int id) {
+        this.id = id;
+    }
 
-![ide](https://developer.android.com/studio/images/studio-homepage-hero_2x.jpg?hl=es-419)
+    public String getTitle() {
+        return title;
+    }
 
-Android Studio [https://developer.android.com/studio/](https://developer.android.com/studio/?hl=es-419)
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-### 4. App Components
+    public String getDesc() {
+        return desc;
+    }
 
-App Components [https://developer.android.com/guide/components/fundamentals](https://developer.android.com/guide/components/fundamentals)
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
 
-- Activities
+    public double getPrice() {
+        return price;
+    }
 
-- Services
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
-- Broadcast receivers
+    public boolean isCartelera() {
+        return cartelera;
+    }
 
-- Content providers
+    public void setCartelera(boolean cartelera) {
+        this.cartelera = cartelera;
+    }
+}
+```
+3. La celda ,usualmente las celda que vamos a mostrar de nuestra lista, siempre es personalizada . Es decir, tendremos imágenes, textos , botones . Es deficil ver solo listas con textos, en las aplicaciones siempre vamos a tener listas con diseños personalizados . Para esto , nosotros podemos dibujar nuestras propias celdad usando XML
 
-### 5. Android Emulator
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
 
-![genymotion](https://www.genymotion.com/wp-content/uploads/2016/02/features-genymotion-imac.jpg)
+    <TextView
+        android:id="@+id/tviName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:text="Doctor Strange"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
-Genymotion [https://www.genymotion.com/desktop/](https://www.genymotion.com/desktop/)
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_movie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-### 6. Gradle
-
-Android Plugin for Gradle Release Notes  [https://developer.android.com/studio/releases/gradle-plugin](https://developer.android.com/studio/releases/gradle-plugin)
-
-![gradle](https://www.safaribooksonline.com/library/view/gradle-recipes-for/9781491947272/assets/rega_0108.png)
-
-Building Android Apps [https://guides.gradle.org/building-android-apps/](https://guides.gradle.org/building-android-apps/)
-
-Gradle Tasks
+    <ImageView
+        android:id="@+id/iviCartelera"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_ticket"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"
+        android:layout_marginRight="4dp" />
+</android.support.constraint.ConstraintLayout>
 
 ```
-./gradlew tasks
+
+4. El adapter , vamos a requerir construir un adapter para manipular una lista 
+
+```java
+
+package com.androidbootcamp.androidtemplate.adapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+import com.androidbootcamp.androidtemplate.R;
+
+
+/**
+ * Created by emedinaa on 15/10/15.
+ */
+public class SimpleListAdapter extends BaseAdapter {
+
+    private Context context;
+    private String[] data;
+
+    public SimpleListAdapter(Context context, String[] data) {
+        this.context=context;
+        this.data= data;
+    }
+
+    @Override
+    public int getCount() {
+        return data.length;
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return data[position];
+    }
+
+    @Override
+    public long getItemId(int i) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        View view;
+        if (convertView == null) {
+            view = LayoutInflater.from(this.context).inflate(R.layout.row_list,parent,false);
+        } else {
+            view = convertView;
+        }
+        TextView  tviTitle=view.findViewById(R.id.tviTitle);
+        tviTitle.setText(data[position]);
+        return view;
+    }
+}
+```
+5. Asociar nuestro adapter con el componente visual
+
+```java
+ private String[] mDays = {"Monday", "Tuesday","Wednesday","Thursday","Friday",
+"Saturday", "Sunday"};
+  ...
+  
+  listViewSimple= findViewById(R.id.listViewSimple);
+
+  SimpleListAdapter mySimpleListAdapter= new SimpleListAdapter(this,
+          mDays);
+  lviSimple.setAdapter(mySimpleListAdapter);
 ```
 
-```
-MacBook-Pro-de-Eduardo:JavaForAndroid emedinaa$ ./gradlew tasks
-Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+## RecyclerView
 
-> Task :tasks
+<img src="https://developer.android.com/training/material/images/RecyclerView.png" />
 
-------------------------------------------------------------
-All tasks runnable from root project
-------------------------------------------------------------
+## Events
 
-Android tasks
--------------
-androidDependencies - Displays the Android dependencies of the project.
-signingReport - Displays the signing info for each variant.
-sourceSets - Prints out all the source sets defined in this project.
+Si es un ListView o GridView , contamos un evento para saber si seleccionamos un item de la lista
 
-Build tasks
------------
-assemble - Assembles all variants of all applications and secondary packages.
-assembleAndroidTest - Assembles all the Test applications.
-assembleDebug - Assembles all Debug builds.
-assembleRelease - Assembles all Release builds.
-build - Assembles and tests this project.
-buildDependents - Assembles and tests this project and all projects that depend on it.
-buildNeeded - Assembles and tests this project and all projects it depends on.
-clean - Deletes the build directory.
-cleanBuildCache - Deletes the build cache directory.
-compileDebugAndroidTestSources
-compileDebugSources
-compileDebugUnitTestSources
-compileReleaseSources
-compileReleaseUnitTestSources
-mockableAndroidJar - Creates a version of android.jar that's suitable for unit tests.
-
-Build Setup tasks
------------------
-init - Initializes a new Gradle build.
-wrapper - Generates Gradle wrapper files.
-
-Help tasks
-----------
-buildEnvironment - Displays all buildscript dependencies declared in root project 'JavaForAndroid'.
-components - Displays the components produced by root project 'JavaForAndroid'. [incubating]
-dependencies - Displays all dependencies declared in root project 'JavaForAndroid'.
-dependencyInsight - Displays the insight into a specific dependency in root project 'JavaForAndroid'.
-dependentComponents - Displays the dependent components of components in root project 'JavaForAndroid'. [incubating]
-help - Displays a help message.
-model - Displays the configuration model of root project 'JavaForAndroid'. [incubating]
-projects - Displays the sub-projects of root project 'JavaForAndroid'.
-properties - Displays the properties of root project 'JavaForAndroid'.
-tasks - Displays the tasks runnable from root project 'JavaForAndroid' (some of the displayed tasks may belong to subprojects).
-
-Install tasks
--------------
-installDebug - Installs the Debug build.
-installDebugAndroidTest - Installs the android (on device) tests for the Debug build.
-uninstallAll - Uninstall all applications.
-uninstallDebug - Uninstalls the Debug build.
-uninstallDebugAndroidTest - Uninstalls the android (on device) tests for the Debug build.
-uninstallRelease - Uninstalls the Release build.
-
-Verification tasks
-------------------
-check - Runs all checks.
-connectedAndroidTest - Installs and runs instrumentation tests for all flavors on connected devices.
-connectedCheck - Runs all device checks on currently connected devices.
-connectedDebugAndroidTest - Installs and runs the tests for debug on connected devices.
-deviceAndroidTest - Installs and runs instrumentation tests using all Device Providers.
-deviceCheck - Runs all device checks using Device Providers and Test Servers.
-lint - Runs lint on all variants.
-lintDebug - Runs lint on the Debug build.
-lintRelease - Runs lint on the Release build.
-lintVitalRelease - Runs lint on just the fatal issues in the release build.
-test - Run unit tests for all variants.
-testDebugUnitTest - Run unit tests for the debug build.
-testReleaseUnitTest - Run unit tests for the release build.
-
-To see all tasks and more detail, run gradlew tasks --all
-
-To see more detail about a task, run gradlew help --task <task>
+```java
+ listViewMovies.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Movie movie =(Movie) adapterView.getAdapter().getItem(position);
+                String message= movie.getTitle()+ " "+ movie.isCartelera();
+                //String.format("title %s cartela %s ",movie.getTitle(),String.valueOf(movie.isCartelera()) );
+                showItem(message);
+            }
+});
 ```
 
-### 7. Crea tu primera aplicación
+Si es un recyclerView , no contamos con un listener por defecto , pero agregué unas clases que nos pueden ayudar con esto :
 
-Build your first App [https://developer.android.com/training/basics/firstapp/](https://developer.android.com/training/basics/firstapp/)
+```java
+   recyclerViewPokemon.addOnItemTouchListener(new RecyclerTouchListener(this, recyclerViewPokemon, new ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                if(pokemonList!=null){
+                    Pokemon pokemon= pokemonList.get(position);
+                    goToDetails(pokemon);
+                }
+            }
 
-![1](https://developer.android.com/training/basics/firstapp/images/studio-welcome_2x.png)
+            @Override
+            public void onLongClick(View view, int position) {}
+}));
+```
 
-![2](https://developer.android.com/training/basics/firstapp/images/studio-editor_2x.png)
+## Exercises
 
-![3](https://developer.android.com/training/basics/firstapp/images/run-avd_2x.png)
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-I.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-II.png?raw=true" height="320"/>
 
-![4](https://developer.android.com/training/basics/firstapp/images/screenshot-activity2.png)
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-III.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-IV.png?raw=true" height="320"/>
 
-### 8. Java for Android Developers
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-V.png?raw=true" height="320"/>
 
-### GIT
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-I.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-II.png?raw=true" height="320"/>
 
-![git](https://image.slidesharecdn.com/gitandgithubworkflows-141023162202-conversion-gate01/95/git-and-github-workflows-12-638.jpg?cb=1414117717)
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-III.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-IV.png?raw=true" height="320"/>
 
-![github](https://i.ytimg.com/vi/hSbJaIdqwKg/maxresdefault.jpg)
+<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-V.png?raw=true" height="320"/>
 
-Git Flow [https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/)
+## Referencias 
 
-Github [https://github.com/](https://github.com/)
 
-## Samples
+Adapter https://developer.android.com/reference/android/widget/Adapter.html
 
-- MyFirstApp
+ListView https://developer.android.com/guide/topics/ui/layout/listview.html
 
- <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/my-first-app.png" height="480">
+GridView https://developer.android.com/guide/topics/ui/layout/gridview.html
 
-- JavaForAndroid
+RecyclerView https://developer.android.com/guide/topics/ui/layout/recyclerview.html
 
- <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/java-for-android.png" height="480">
+Creating List and Cards https://developer.android.com/training/material/lists-cards.html
 
-- GallerySample
+RecyclerView https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html
 
- <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png" height="480">
+Android Developers Fundamentals Course - Create a RecyclerView https://google-developer-training.gitbooks.io/android-developer-fundamentals-course-practicals/content/en/Unit%202/44_p_create_a_recycler_view.html
 
-## Homework
 
-  ### Gradle
-  
-  Buscar una librería compatible con Android y agregar la dependencia a un proyecto . Ejemplo , picasso o retrofit.
-  
-  Escoger un task del plugin de Gradle y ejecutarla desde terminal o desde Android Studio
-  
-  ### Android Studio
-  
-  Crear un proyecto en Android Studio , luego realizar los cambios acorde al template entregado en clase (gradle).
-  
 
-## Resources
 
-- Entorno de desarrollo https://developer.android.com/studio/index.html?hl=es-419
-
-- Android Developers - Desarrollo https://developer.android.com/develop/index.html
-
-- Ejemplos de Android  https://developer.android.com/samples/
-
-- Primer proyecto Android https://developer.android.com/training/basics/firstapp/creating-project.html?hl=es-419
-
-- Codelab - primera android app con Java https://codelabs.developers.google.com/codelabs/build-your-first-android-app/index.html?index=..%2F..%2Findex
-
-- Codelab - primera android app con Kotlin https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin/index.html?index=..%2F..%2Findex
-
-- Android Tool Time https://www.youtube.com/watch?v=0n9sBgds-Hs&list=PLWz5rJ2EKKc_w6fodMGrA1_tsI3pqPbqa
-
-- Canal oficial en Youtube para Android Developers https://www.youtube.com/user/androiddevelopers
-
-- Java Programming Fundamentals https://www.udemy.com/java-programming-fundamentals/
-
-- Java Fundamentals Language https://www.pluralsight.com/courses/java-fundamentals-language
-
-- Java Programming Basics https://www.udacity.com/course/java-programming-basics--ud282
-
-- Java Fundamentals for Android Development https://www.edx.org/es/course/java-fundamentals-android-development-galileox-caad001x-2
-
-- The Java tutorials https://docs.oracle.com/javase/tutorial/java/index.html
-
-- Java Programming https://www.youtube.com/watch?v=Hl-zzrqQoSE&list=PLFE2CE09D83EE3E28
-
-- Intellij IDEA https://www.jetbrains.com/idea/
-
-- Android Studio https://developer.android.com/studio/index.html?hl=es-419
-
-- Online Java IDE https://www.compilejava.net/
-
-- Sublime text https://www.sublimetext.com/
-
-- Google Java Style Guide https://google.github.io/styleguide/javaguide.html
-
-- Books Android Developers http://fragmentedpodcast.com/tag/books/
