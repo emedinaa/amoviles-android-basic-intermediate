@@ -1,6 +1,42 @@
 # Curso de Aplicaciones Android con Java (Básico - Intermedio) - Academia Móviles
 
 ## Lesson 5 - Monday, May 28, 2018
+- Review
+
+- Lesson
+
+- Samples
+
+- Homework
+
+- Resources
+
+## Review
+
+### ¿Qué temas vimos en la clase pasada ?
+
+- Layouts : LinearLayout , RelativeLayout, ConstraintLayout
+
+- Componentes de Interfaz de Usuario : EditTextView, Button, TextView
+
+- Eventos de Usuario : Click, Teclado, Listas
+
+### Activities
+
+- Completemos los ejemplos de la clase 4 , NavigationSamples https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson4/NavigationSamples
+
+## Lesson
+
+- Desarrollar aplicaciones usando Material Design 
+- Implementar listas en los aplicativos
+- Conocer el uso de RecyclerView y Adapter
+- Implementar listas personalizadas
+- Mejorando el aspecto de los ampliativos usando CardView 
+- Uso de control de versiones (Git)
+- Sincronizar proyectos a Github con Android Studio
+- Conocer el uso de Fragment
+- Implementar Fragment dinámicos o estáticos 
+- Interfaz de usuario (pestañas / Tabs)
 
 ## RecyclerView & Adapters
 
@@ -289,20 +325,23 @@ Si es un recyclerView , no contamos con un listener por defecto , pero agregué 
 
 ## Exercises
 
-<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-I.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-II.png?raw=true" height="320"/>
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson5/exercises/AdapterBasic-I.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-II.png?raw=true" height="320"/>
 
-<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-III.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-IV.png?raw=true" height="320"/>
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson5/exercises/AdapterBasic-III.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-IV.png?raw=true" height="320"/>
 
-<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/AdapterBasic-V.png?raw=true" height="320"/>
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson5/exercises/AdapterBasic-V.png?raw=true" height="320"/>
 
-<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-I.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-II.png?raw=true" height="320"/>
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson5/exercises/Adapters-I.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-II.png?raw=true" height="320"/>
 
-<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-III.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-IV.png?raw=true" height="320"/>
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson5/exercises/Adapters-III.png?raw=true" height="320"/> <img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-IV.png?raw=true" height="320"/>
 
-<img src="https://github.com/BrainFriendly/ab-android-fundamentals/blob/L6RecyclerView-Adapters/exercises/Adapters-V.png?raw=true" height="320"/>
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson5/exercises/Adapters-V.png?raw=true" height="320"/>
 
-## Referencias 
+## Homework
 
+- Realizar los ejercicios AdapterBasic3,AdapterBasic-IV y Adapters-III. https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson3/exercises
+
+## Resources 
 
 Adapter https://developer.android.com/reference/android/widget/Adapter.html
 
