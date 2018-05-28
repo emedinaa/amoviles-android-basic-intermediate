@@ -9,13 +9,62 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainKotlinActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SimpleListActivity"
+            android:label="Simple List Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SimpleGridActivity"
+            android:label="Simple Grid Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MovieListActivity"
+            android:label="Movie List Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MovieGridActivity"
+            android:label="Movie Grid Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PokemonListActivity"
+            android:label="Pokemon List Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PokemonAnimationListActivity"
+            android:label="Pokemon Animation List Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PokemonDetailsActivity"
+            android:label="Pokemon Details Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DynamicContentActivity"
+            android:label="Dynamic Content Activity" />
+        <activity
+            android:name=".RecipeListActivity"
+            android:label="Recipe List Activity" />
+        <activity
+            android:name=".RecipeDetailsActivity"
+            android:label="Recipe Details Activity" />
+        <activity android:name=".RecyclerMultipleActivity"></activity>
     </application>
 
 </manifest>
