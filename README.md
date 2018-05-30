@@ -32,6 +32,12 @@
     
 - Completar la Lección #5 sobre adapters https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson5
 
+- ¿Dónde lanzar los eventos en las listas ? 
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/adapter-events-I.png?raw=true" height="480"/>
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/adapter-events-II.png?raw=true" height="480"/>
+
 ## Lesson
 
 - Desarrollar aplicaciones usando Material Design 
@@ -67,7 +73,16 @@ Los fragments se usan para construir componentes reusables, evitando duplicació
 
 ![fragments](https://developer.android.com/images/training/basics/fragments-screen-mock.png)
 
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/images/fragments03.png?raw=true" height="480"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/images/fragments04.png?raw=true" height="480"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/images/fragments05.png?raw=true" height="480"/>
+
+
 ### Creando un Fragment
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/fragments.png?raw=true" height="480"/>
 
 ```java
     import android.os.Bundle;
@@ -258,11 +273,21 @@ public static class MainActivity extends Activity
     }
 }
 ```
+Comunicación Activity con Fragment
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/fragments-communication1.png?raw=true" height="480"/>
+
+Comunicación Fragment con Activity
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/fragments-communication2.png?raw=true" height="480"/>
+
+Comunicación Fragment con Fragment
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/fragments-communication3.png?raw=true" height="480"/>
 
 ## Homework
 
-- Realizar los ejercicios sobre Fragments
-
+- Realizar los ejercicios  01, 02 sobre Fragments https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson6/exercises
 
 ## Resources 
 
