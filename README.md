@@ -1,6 +1,7 @@
 # Curso de Aplicaciones Android con Java (Básico - Intermedio) - Academia Móviles
 
-## Lesson 5 - Monday, May 28, 2018
+## Lesson 5 - Wednesday, May 30, 2018
+
 - Review
 
 - Lesson
