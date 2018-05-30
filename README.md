@@ -322,6 +322,11 @@ Si es un recyclerView , no contamos con un listener por defecto , pero agregué 
             public void onLongClick(View view, int position) {}
 }));
 ```
+## Samples
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson5/images/samples-01.png?raw=true" height="320"/> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson5/images/samples-02.png?raw=true" height="320"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson5/images/samples-03.png?raw=true" height="320"/> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson5/images/samples-04.png?raw=true" height="320"/>
+
 
 ## Exercises
 
