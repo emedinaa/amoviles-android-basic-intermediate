@@ -12,6 +12,16 @@ import com.emedinaa.myfirstapp.data.Data;
 
 public class SimpleGridActivity extends BaseActivity {
 
+    /*
+       1. Data Provider : List, ArrayList, Array
+       2. View Container : ListView, GridView, RecyclerView
+       3. Entity : Entity class
+       4. Row : view Xml
+       5. Adapter: ArrayAdapter , BaseAdapter, CursorAdapter
+       6. Set Adapter to the View container
+
+*/
+
     private GridView gridViewSimple;
 
     @Override
@@ -19,6 +29,12 @@ public class SimpleGridActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_grid);
         enabledBack();
+
+        //1 Origen de datos Data.movies
+        //2 Container gridViewSimple
+        //3. Entity , String
+        //4. Row row_simple_grid.xml
+        //5. Adapter simpleGridAdapter
 
         gridViewSimple= findViewById(R.id.gridViewSimple);
 

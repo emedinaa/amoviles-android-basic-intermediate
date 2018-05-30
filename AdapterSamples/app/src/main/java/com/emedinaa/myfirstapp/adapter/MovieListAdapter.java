@@ -1,6 +1,7 @@
 package com.emedinaa.myfirstapp.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,12 +68,12 @@ public class MovieListAdapter extends BaseAdapter {
         }else{
             iviCartelera.setVisibility(View.GONE);
         }
-        /*
+
         if(position==0){
             tviTitle.setTextColor(Color.GREEN);
         }else{
             tviTitle.setTextColor(Color.BLACK);
-        }*/
+        }
 
         return view;
     }

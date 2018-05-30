@@ -42,7 +42,8 @@ public class SimpleListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View view;
         if (convertView == null) {
-            view = LayoutInflater.from(this.context).inflate(R.layout.row_list,parent,false);
+            view = LayoutInflater.from(this.context).inflate(R.layout.row_list,parent,
+                    false);
         } else {
             view = convertView;
         }

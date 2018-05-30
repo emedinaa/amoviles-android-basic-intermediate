@@ -3,11 +3,10 @@ package com.emedinaa.myfirstapp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.emedinaa.myfirstapp.data.Data;
+import com.emedinaa.myfirstapp.adapter.SimpleListAdapter;
 
 
 /*
@@ -37,20 +36,25 @@ public class SimpleListActivity extends BaseActivity {
         enabledBack();
 
         listViewSimple= findViewById(R.id.listViewSimple);
+        //celda
+        //android.R.layout.simple_list_item_1
+        //R.layout.row_simple_list
 
-        /*lviSimple.setAdapter(new ArrayAdapter<String>(this,
-            R.layout.row_simple_list, mDays));*/
+        //adapter
+        /*ArrayAdapter<String> myArrayAdapter= new ArrayAdapter<String>(this,
+                R.layout.row_simple_list, mMonths);
+
+        listViewSimple.setAdapter(myArrayAdapter);*/
 
         /*lviSimple.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.row_simple_list, mMonths));*/
 
-        listViewSimple.setAdapter(new ArrayAdapter<String>(this,
-                R.layout.row_simple_list, Data.movies));
+        /*listViewSimple.setAdapter(new ArrayAdapter<String>(this,
+                R.layout.row_simple_list, Data.movies));*/
 
-        /*
         SimpleListAdapter mySimpleListAdapter= new SimpleListAdapter(this,
                 mDays);
-        lviSimple.setAdapter(mySimpleListAdapter);*/
+        listViewSimple.setAdapter(mySimpleListAdapter);
 
         //events
         listViewSimple.setOnItemClickListener(new AdapterView.OnItemClickListener() {
