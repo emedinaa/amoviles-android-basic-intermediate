@@ -28,6 +28,7 @@
     - Una celda en xml, ustedes decidan que parámetros van a mostrar
     - Crear un custom adapter
     - Mostrar la lista con los productos cargados
+    - Pueden encontrar imágenes para los productos en iconfinder.com https://www.iconfinder.com/search/?q=products&price=free
     
 - Completar la Lección #5 sobre adapters https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson5
 
