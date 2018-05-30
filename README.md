@@ -12,7 +12,39 @@
 
 - Resources
 
-Fragments, conceptos y comunicación.
+## Review
+
+### ¿Qué temas vimos en la clase pasada ?
+
+- Navegación, Intents, Bundle
+- ListView, GridView, RecyclerView
+- Adapters
+
+### Activities
+
+- Hagamos una lista de productos , para lo cual deben de crear los siguiente:
+
+    - Una entidad llamada Product
+    - Una celda en xml, ustedes decidan que parámetros van a mostrar
+    - Crear un custom adapter
+    - Mostrar la lista con los productos cargados
+    
+- Completar la Lección #5 sobre adapters https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson5
+
+## Lesson
+
+- Desarrollar aplicaciones usando Material Design 
+- Implementar listas en los aplicativos
+- Conocer el uso de RecyclerView y Adapter
+- Implementar listas personalizadas
+- Mejorando el aspecto de los ampliativos usando CardView 
+- Uso de control de versiones (Git)
+- Sincronizar proyectos a Github con Android Studio
+- Conocer el uso de Fragment
+- Implementar Fragment dinámicos o estáticos 
+- Interfaz de usuario (pestañas / Tabs)
+
+### Fragments, conceptos y comunicación.
 
 - Fragments
 
@@ -26,7 +58,7 @@ Fragments, conceptos y comunicación.
 
 - Exercises
 
-## Conociendo los Fragments
+### Conociendo los Fragments
 
 Los fragmentos son vistas con código y diseño(XML) , no necesitan ser registrados en el AndroidManifest y requieren de una actividad como contenedor. Se pueden agregar o quitar a demanda  y tambien cuentan con su propio ciclo de vida. 
 Adicional, una actividad puede contener más de un fragment, es decir , por ejemplo, en una pantalla puede tener 2 fragments.
@@ -34,7 +66,7 @@ Los fragments se usan para construir componentes reusables, evitando duplicació
 
 ![fragments](https://developer.android.com/images/training/basics/fragments-screen-mock.png)
 
-## Creando un Fragment
+### Creando un Fragment
 
 ```java
     import android.os.Bundle;
@@ -134,11 +166,11 @@ Otra opción podría ser reemplazar un fragment por otro , para lo cual :
   transaction.commit();
 ```
 
-## Ciclo de un vida de un Fragment
+### Ciclo de un vida de un Fragment
 
 ![fragments](https://developer.android.com/guide/components/images/activity_lifecycle.png)
 
-## Comunicación 
+### Comunicación 
 
 Para poder comunicar un fragment con una actividad(padre) o con otro fragment , usamos interfaces como canal de comunicación
 
@@ -225,6 +257,11 @@ public static class MainActivity extends Activity
     }
 }
 ```
+
+## Homework
+
+- Realizar los ejercicios sobre Fragments
+
 
 ## Resources 
 
