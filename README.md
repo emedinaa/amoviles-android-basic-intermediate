@@ -285,6 +285,16 @@ Comunicación Fragment con Fragment
 
 <img src="https://github.com/learning-android-pe/training-resources/blob/master/fragments-communication3.png?raw=true" height="480"/>
 
+## Samples
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/Exercise1.png?raw=true" height="320"/> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/Exercise2.png?raw=true" height="320"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/Exercise3.png?raw=true" height="320"/> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/Exercise5.png" height="320"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/screenshot_color.png?raw=true" height="320"/> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/screenshot_contacts.png?raw=true" height="320"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/screenshot_message.png?raw=true" height="320"/> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/screenshot_tab.png?raw=true" height="320"/>
+
 ## Homework
 
 - Realizar los ejercicios  01, 02 sobre Fragments https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson6/exercises
