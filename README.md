@@ -28,8 +28,15 @@
     - Una celda en xml, ustedes decidan que parámetros van a mostrar
     - Crear un custom adapter
     - Mostrar la lista con los productos cargados
+    - Pueden encontrar imágenes para los productos en iconfinder.com https://www.iconfinder.com/search/?q=products&price=free
     
 - Completar la Lección #5 sobre adapters https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson5
+
+- ¿Dónde lanzar los eventos en las listas ? 
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/adapter-events-I.png?raw=true" height="480"/>
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/ui/adapter-events-II.png?raw=true" height="480"/>
 
 ## Lesson
 
@@ -66,7 +73,16 @@ Los fragments se usan para construir componentes reusables, evitando duplicació
 
 ![fragments](https://developer.android.com/images/training/basics/fragments-screen-mock.png)
 
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/images/fragments03.png?raw=true" height="480"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/images/fragments04.png?raw=true" height="480"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/images/fragments05.png?raw=true" height="480"/>
+
+
 ### Creando un Fragment
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/fragments.png?raw=true" height="480"/>
 
 ```java
     import android.os.Bundle;
@@ -257,11 +273,31 @@ public static class MainActivity extends Activity
     }
 }
 ```
+Comunicación Activity con Fragment
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/fragments-communication1.png?raw=true" height="480"/>
+
+Comunicación Fragment con Activity
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/fragments-communication2.png?raw=true" height="480"/>
+
+Comunicación Fragment con Fragment
+
+<img src="https://github.com/learning-android-pe/training-resources/blob/master/fragments-communication3.png?raw=true" height="480"/>
+
+## Samples
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/Exercise1.png?raw=true" height="320"/> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/Exercise2.png?raw=true" height="320"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/Exercise3.png?raw=true" height="320"/> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/Exercise5.png" height="320"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/screenshot_color.png?raw=true" height="320"/> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/screenshot_contacts.png?raw=true" height="320"/>
+
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/screenshot_message.png?raw=true" height="320"/> <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson6/exercises/screenshot_tab.png?raw=true" height="320"/>
 
 ## Homework
 
-- Realizar los ejercicios sobre Fragments
-
+- Realizar los ejercicios  01, 02 sobre Fragments https://github.com/emedinaa/amoviles-android-basic-intermediate/tree/Lesson6/exercises
 
 ## Resources 
 
