@@ -50,6 +50,10 @@ public class ProductAdapter  extends RecyclerView.Adapter<ProductAdapter.ViewHol
         holder.textViewTitle.setText(productName);
         holder.textViewDesc.setText(productDesc);
         holder.textViewPrice.setText(productPrice);
+
+        if(product.getImage()!=0){
+            holder.imageViewProduct.setImageResource(product.getImage());
+        }
     }
 
     @Override

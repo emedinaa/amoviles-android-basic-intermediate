@@ -42,6 +42,7 @@ public class AdapterBasicIIActivity extends BaseActivity {
     private void loadProducts(){
         Product product1= new Product(100,"Mesa de Ping pong",
                 "Esta es un mesa de ping pong \nde 200x100 cm",90);
+        product1.setImage(R.drawable.ic_table_tenis);
 
         Product product2= new Product(101,"Pizarra Acrílica",
                 "Esta es un pizarra acrílica \nde 800x400 cm",120);
@@ -51,6 +52,7 @@ public class AdapterBasicIIActivity extends BaseActivity {
 
         Product product4= new Product(103,"Silla básica",
                 "Esta es un silla básica \nde de color blanco",50);
+        product4.setImage(R.drawable.ic_chair1);
 
         Product product5= new Product(104,"Monitor Led",
                 "Esta es un monitor led \nde 40'",180);
