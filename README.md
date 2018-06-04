@@ -22,6 +22,23 @@
 
 ### Activities
 
+- Completemos los ejemplos sobre Fragments . Ejemplo : "FragmentSamples"
+
+- Veamos sobre los diferentes componentes de Navegación . Ejemplo : "NavigationSamples"
+
+ - Bottom Navigation https://material.io/design/components/bottom-navigation.html
+ <img src="https://material.io/design/assets/0B6xUSjjSulxcZ0F3X0FCQ1NPTHc/bottomnav-usage-1.png?raw=true" height="480"/>
+   
+ - Navigation drawer https://material.io/design/components/navigation-drawer.html
+ 
+  <img src="https://material.io/design/assets/1nsuL8VDpBW_LZYXgabK1H0uq6icmmKYt/nav-drawer-intro.png?raw=true" height="480"/>
+ 
+ - View Pager https://developer.android.com/training/animation/screen-slide
+ 
+ - Tabs https://material.io/design/components/tabs.html
+ 
+  <img src="https://material.io/design/assets/1uV0Rzc2Q2RzWEz9vguOME1SoCQofEmld/tabs-usage-01.png?raw=true" height="480"/>
+ 
 ## Lesson
 
 - Desarrollar aplicaciones usando Material Design 
