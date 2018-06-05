@@ -337,10 +337,13 @@ int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key), defa
 ## Samples
 
 - FragmentSamples
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson7/images/fragment_samples.png?raw=true" height="480"/>
 
 - NavigationSamples
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson7/images/navigation_samples.png?raw=true" height="480"/>
 
 - DBSamples
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson7/images/db_samples.png?raw=true" height="480"/>
 
 ## Homework
 
