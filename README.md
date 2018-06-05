@@ -371,3 +371,5 @@ int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key), defa
 - Save Key-Value Data with SharedPreferences https://developer.android.com/training/data-storage/shared-preferences.html#java
 
 - Save Data using SQLite https://developer.android.com/training/data-storage/sqlite.html
+
+- Material icons https://material.io/tools/icons/?style=baseline
