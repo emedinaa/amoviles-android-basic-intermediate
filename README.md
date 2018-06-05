@@ -66,6 +66,11 @@
 - Publicar una aplicación en el Google Market Place
 - Presentación de Proyecto Final
 
+## Storage Options
+
+- (en)https://developer.android.com/guide/topics/data/data-storage
+- (es)https://developer.android.com/guide/topics/data/data-storage?hl=es-419
+
 ## DB Sqlite
 
 Otra forma de persistir información es usando una base de datos local (SQLITE), donde puedes usar el lenguaje SQL y realizar las operaciones que necesites para manejar una BD en tu APP.
