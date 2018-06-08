@@ -378,3 +378,6 @@ int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key), defa
 
 - Google Maps API https://developers.google.com/maps/documentation/android-api/?hl=es-419
 
+- Camera https://github.com/google/cameraview
+
+
