@@ -24,6 +24,7 @@ implements BlankFragmentListener {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         fragmentManager= getSupportFragmentManager();
+
         blankFragment= (BlankFragment) fragmentManager.findFragmentById(R.id.blankFragment);
 
         Log.v("CONSOLE", "(2) 1 Desde FragmentBasicActivity");
@@ -66,7 +67,7 @@ implements BlankFragmentListener {
 
     //NO HACER...
     public static void llamarAPapa(){
-
+        Log.v("CONSOLE", "llamarAPapa");
     }
 
     public  void llamarAPapa2(){

@@ -99,6 +99,7 @@ public class BlankFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        //getActivity()
         TextView textViewMessage=getView().findViewById(R.id.textViewMessage);
         textViewMessage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,8 +108,16 @@ public class BlankFragment extends Fragment {
             }
         });
 
+        //FragmentBasicActivity.llamarAPapa();
+
+        //((FragmentBasicActivity)getActivity()).callToActivity(null);
+
         //( (FragmentBasicActivity)(getActivity())).llamarAPapa2();
         //FragmentBasicActivity.llamarAPapa();
+
+        if(mListener!=null){
+            mListener.callToActivity(null);
+        }
 
         /*getView().findViewById(R.id.textViewMessage).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,11 +135,11 @@ public class BlankFragment extends Fragment {
         });*/
 
         //Toast.makeText(getActivity(),"Hola desde fragment ",Toast.LENGTH_LONG).show();
-        Log.v("CONSOLE", "1. BlankFragment");
+        /*Log.v("CONSOLE", "1. BlankFragment");
         if(mListener!=null){
             Log.v("CONSOLE", "2. Enviar desde BlankFragment");
             mListener.callToActivity("Lo que sea ");
-        }
+        }*/
     }
 
     public void ejecutarAccionDesdeFragment(String message){
