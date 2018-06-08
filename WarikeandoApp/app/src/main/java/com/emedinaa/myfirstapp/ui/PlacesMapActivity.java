@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 public class PlacesMapActivity extends BaseActivity implements OnMapReadyCallback,
-        GoogleMap.OnMarkerClickListener{
+        GoogleMap.OnMarkerClickListener, GoogleMap.OnInfoWindowClickListener{
 
     @Nullable
     private List<Warike> places;
@@ -56,6 +56,7 @@ public class PlacesMapActivity extends BaseActivity implements OnMapReadyCallbac
         googleMap.getUiSettings().setZoomControlsEnabled(true);
         googleMap.getUiSettings().setMyLocationButtonEnabled(true);
         googleMap.setOnMarkerClickListener(this);
+        googleMap.setOnInfoWindowClickListener(this);
         googleMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
     }
 
@@ -101,12 +102,18 @@ public class PlacesMapActivity extends BaseActivity implements OnMapReadyCallbac
 
     @Override
     public boolean onMarkerClick(Marker marker) {
-        Warike warike= warikeHashMap.get(marker);
-        goToWarikeDetails(warike);
+        //Warike warike= warikeHashMap.get(marker);
+        //goToWarikeDetails(warike);
         // We return false to indicate that we have not consumed the event and that we wish
         // for the default behavior to occur (which is for the camera to move such that the
         // marker is centered and for the marker's info window to open, if it has one).
         return false;
+    }
+
+    @Override
+    public void onInfoWindowClick(Marker marker) {
+        Warike warike= warikeHashMap.get(marker);
+        goToWarikeDetails(warike);
     }
 
     private void goToWarikeDetails(Warike warike){
