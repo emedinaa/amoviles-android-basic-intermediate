@@ -382,4 +382,6 @@ int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key), defa
 
 - Google Maps samples https://github.com/googlemaps/android-samples
 
+- Google API Console https://console.cloud.google.com/apis/
+
 
