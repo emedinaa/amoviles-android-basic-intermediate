@@ -66,6 +66,11 @@
 - Publicar una aplicación en el Google Market Place
 - Presentación de Proyecto Final
 
+## Storage Options
+
+- (en)https://developer.android.com/guide/topics/data/data-storage
+- (es)https://developer.android.com/guide/topics/data/data-storage?hl=es-419
+
 ## DB Sqlite
 
 Otra forma de persistir información es usando una base de datos local (SQLITE), donde puedes usar el lenguaje SQL y realizar las operaciones que necesites para manejar una BD en tu APP.
@@ -337,10 +342,13 @@ int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key), defa
 ## Samples
 
 - FragmentSamples
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson7/images/fragment_samples.png?raw=true" height="480"/>
 
 - NavigationSamples
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson7/images/navigation_samples.png?raw=true" height="480"/>
 
 - DBSamples
+<img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson7/images/db_samples.png?raw=true" height="480"/>
 
 ## Homework
 
@@ -363,3 +371,5 @@ int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key), defa
 - Save Key-Value Data with SharedPreferences https://developer.android.com/training/data-storage/shared-preferences.html#java
 
 - Save Data using SQLite https://developer.android.com/training/data-storage/sqlite.html
+
+- Material icons https://material.io/tools/icons/?style=baseline
