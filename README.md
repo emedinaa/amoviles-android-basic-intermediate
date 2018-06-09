@@ -34,4 +34,6 @@
 
 - Google play console https://play.google.com/apps/publish/
 
+- Generador de políticas de seguridad https://app-privacy-policy-generator.firebaseapp.com/
+
 
