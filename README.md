@@ -12,25 +12,22 @@
 
 ## Lesson
 
-1. ¿Qué es android? (versiones, história)
+• ¿Qué es android? (versiones, história)
 
-2. Entorno de desarrollo Android (Android Studio)
+• Entorno de desarrollo Android (Android Studio)
 
-3. Estructura de un proyecto Android (Android Studio)
+• Estructura de un proyecto Android (Android Studio) 
 
-4. Componentes de una aplicación Android (Android Studio)
+• Componentes de una aplicación Android (Android
+Studio)
 
-5. Simuladores de android
+• Simuladores de android
 
-6. Conociendo Gradle
+• Gradle
 
-7. Uso de mockups
+• Desarrollando mi primera aplicación Android • Explicación de Métodos, Objetos y Clases
 
-8. Desarrollando mi primera aplicación Android
-
-9. Explicación de Métodos, Objetos y Clases
-
-10. Características del diseño en Android
+• Características del diseño en Android
 
 ### 1. Android
 
@@ -180,7 +177,404 @@ Build your first App [https://developer.android.com/training/basics/firstapp/](h
 
 ![4](https://developer.android.com/training/basics/firstapp/images/screenshot-activity2.png)
 
+Gradle version : 4.1
+
+Android Plugin Version : 3.0.1
+
+Build.gradle del proyecto
+```
+  // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.30'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = 15
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '26.1.0'
+    constraintLayoutVersion='1.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '26.1.0'
+    junitVersion = '4.12'
+}
+```
+
+Build.gradle de la App
+
+```
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    //compileSdkVersion 26
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.emedinaa.myfirstapp"
+        //minSdkVersion 18
+        //targetSdkVersion 26
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    //implementation 'com.android.support:appcompat-v7:26.1.0'
+    //implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+
+    //testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+```Gradle version : 4.1
+
+Android Plugin Version : 3.0.1
+
+Build.gradle del proyecto
+```
+  // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.30'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = 15
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '26.1.0'
+    constraintLayoutVersion='1.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '26.1.0'
+    junitVersion = '4.12'
+}
+```
+
+Build.gradle de la App
+
+```
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    //compileSdkVersion 26
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.emedinaa.myfirstapp"
+        //minSdkVersion 18
+        //targetSdkVersion 26
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    //implementation 'com.android.support:appcompat-v7:26.1.0'
+    //implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+
+    //testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+```
+
+
 ### 8. Java for Android Developers
+
+Compilar Java online [https://www.compilejava.net/](https://www.compilejava.net/)
+
+```
+public class HelloWorld
+{
+
+  public static void main(String[] args)
+  {
+
+    System.out.print("Hello World!");
+  }
+}
+```
+
+Comentarios
+
+```
+//This is a single line comment
+
+/*
+This is a comment spreading
+over two lines or more
+*/
+
+```
+
+Variables
+
+```
+int first_number, second_number, answer;
+first_number = 10;
+second_number = 20;
+answer = first_number + second_number;
+
+double first_number, second_number, answer;
+first_number = 10.5;
+second_number = 20.8;
+
+float first_number, second_number, answer;
+first_number = 10.5f;
+second_number = 20.8f;
+
+String first_name,family_name;
+first_name = "William";
+family_name = "Shakespeare";
+
+System.out.println( first_name + " " + family_name );
+
+```
+
+Operadores
+```
++ (the plus sign)
+- (the minus sign)
+* (the multiplication sign is the asterisk sign)
+/ (the divide sign is the forward slash)
+
+> Greater Than
+< Less Than
+>= Greater Than or Equal To
+<= Less Than or Equal To
+
+&& AND
+|| OR
+== HAS A VALUE OF
+! NOT
+
+```
+
+Condicionales
+
+```
+if ( Statement ) {
+}
+```
+```
+int age=18;
+
+if(age<=18){
+}
+
+if(age>18){
+}
+
+```
+
+```
+if ( condition_one ) {
+
+}
+else if ( condition_two ) {
+
+}
+else {
+
+}
+```
+
+Booleanos
+
+```
+boolean user = true;
+
+if ( user == true) {
+System.out.println("it's true");
+}
+else {
+System.out.println("it's false");
+} 
+
+```
+
+```
+switch ( variable_to_test ) {
+  case value:
+    code_here;
+    break;
+  case value:
+    code_here;
+    break;
+  default:
+    values_not_caught_above;
+}
+```
+
+Bucles
+
+```
+while (condicion) {
+    ...
+}
+```
+
+```
+do {
+    ...
+} while (condicion)
+```
+
+```
+for (int i=0; condicion; i++) {
+    ...
+}
+```
+
+```
+for (iteredor: coleccion) {
+    ...
+}
+```
+
+Métodos
+
+```
+ private int sumar(int op1, int op2) {
+        return op1+op2;
+    }
+    
+  private int restar(int op1, int op2) {
+      return op1-op2;
+  }
+  
+  private int multiplicar(int op1, int op2) {
+      return op1*op2;
+  }
+  
+  private int dividir(int op1, int op2) {
+      //TODO validar si op2!=0
+      return op1/op2;
+  }
+```
+
+### Activities
+
+- Crear un nuevo proyecto en Android y realizar los cambios para que tenga la configuración del template(MyFirstApp)
+
+Build your first app  [https://developer.android.com/training/basics/firstapp/](https://developer.android.com/training/basics/firstapp/)
+
+- Crear una actividad llamada HomeActivity
+
+- Crear un fragment llamado FragmentActivity
+
+- Crear una clase java llamada User en src/main/package/model/User.java
+
+- Agregar un color en res/values/colors.xml
+
+- Agregar un string en res/values/strings.xml
+
+- Agregar una dimension en res/values/dimens.xml
+
+- Agregar una imagen en res/drawable/ic_android.png
 
 ### GIT
 
@@ -205,6 +599,10 @@ Github [https://github.com/](https://github.com/)
 - GallerySample
 
  <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson1/images/gallery-sample.png" height="480">
+ 
+ - JavaSamples
+
+ <img src="https://github.com/emedinaa/amoviles-android-basic-intermediate/blob/Lesson2/images/java-samples.png" height="480">
 
 ## Homework
 
