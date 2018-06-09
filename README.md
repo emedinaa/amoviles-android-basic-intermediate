@@ -36,4 +36,6 @@
 
 - Generador de políticas de seguridad https://app-privacy-policy-generator.firebaseapp.com/
 
+- Intent images https://developer.android.com/training/camera/photobasics
+
 
